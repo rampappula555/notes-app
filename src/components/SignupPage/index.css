@@ -1,0 +1,13 @@
+.signup-page-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.sign-in-container {
+  display: flex;
+  align-items: center;
+}
+.sign-in-button {
+  margin-left: 5px;
+}

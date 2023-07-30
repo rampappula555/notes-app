@@ -1,0 +1,20 @@
+.profile-page-container {
+  width: 30%;
+}
+.home-page-container {
+  width: 70%;
+}
+.home-page-main-container {
+  height: 100vh;
+  width: 100vw;
+}
+.account-creation-success-notification {
+  position: fixed;
+  bottom: 270px;
+  left: 40%;
+}
+.home-and-profile-container {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
