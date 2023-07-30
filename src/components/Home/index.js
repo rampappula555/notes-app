@@ -12,7 +12,6 @@ const Home = () => {
     (eachNote) => eachNote.id === activeUserId
   );
   const location = useLocation();
-  console.log(location);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [notes, setNotes] = useState("");
   const [showDeleteButton, setShowDeleteButton] = useState(false);

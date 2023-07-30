@@ -83,23 +83,18 @@ function App() {
         deleteUserDetails,
       }}
     >
-      <Routes>
-        <Route element={<ProtectedRoute />}>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/note/:id"
-            element={
-              <ErrorBoundary>
-                <EachNoteDetails />
-              </ErrorBoundary>
-            }
-          />
-          <Route path="/profile" element={<Profile />} />
-        </Route>
-        <Route path="/items/:id" element={<Items />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/sign-up" element={<SignupPage />} />
-      </Routes>
+      <ErrorBoundary>
+        <Routes>
+          <Route element={<ProtectedRoute />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/note/:id" element={<EachNoteDetails />} />
+            <Route path="/profile" element={<Profile />} />
+          </Route>
+          <Route path="/items/:id" element={<Items />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/sign-up" element={<SignupPage />} />
+        </Routes>
+      </ErrorBoundary>
     </UserDetailsContext.Provider>
   );
 }
